@@ -579,6 +579,16 @@ width: 100%;
   width: 100%;
   border-radius: 50%;
 }
+/* -------Typing-------- */
+.typing::after
+{
+    content: "";
+    right: -5px;
+    width: 1px;
+    height: 100%;
+    border-right: 3.3px solid #fc4c87d9;
+    animation: blink 0.6s infinite ease;
+}
 
 /*About Section*/
 .about-img{

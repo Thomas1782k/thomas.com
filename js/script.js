@@ -9,6 +9,29 @@ window.addEventListener("load",()=>{
   },600);
 });
 
+/*-------Typing-------*/
+const texts=['Software Developer','Web Developer'];
+let c=0;
+let i=0;
+let ctxt="";
+let letter="";
+(function type()
+{
+    if(c===texts.length)
+    c=0;
+
+    ctxt=texts[c];
+    letter=ctxt.slice(0,++i);
+
+    document.querySelector(".typing").textContent=letter;
+    if(letter.length===ctxt.length)
+    {
+        c++;
+        i=0;
+    }
+    setTimeout(type,400);
+})();
+
 /*------------Toogle Navbar--------------*/ 
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click",() =>{
