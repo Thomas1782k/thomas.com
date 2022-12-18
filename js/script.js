@@ -15,7 +15,8 @@ let c=0;
 let i=0;
 let ctxt="";
 let letter="";
-(function type()
+type();
+function type()
 {
     if(c===texts.length)
     c=0;
@@ -30,7 +31,7 @@ let letter="";
         i=0;
     }
     setTimeout(type,400);
-})();
+}
 
 /*------------Toogle Navbar--------------*/ 
 const navToggler = document.querySelector(".nav-toggler");
