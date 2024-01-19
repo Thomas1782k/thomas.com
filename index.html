@@ -313,7 +313,7 @@
               <textarea placeholder="Message" class="input-control" required></textarea>
             </div>
             <div class="submit-btn">
-              <button type="submit" class="btn">send message</button>
+              <button type="submit" class="btn" onclick="submitForm()">send message</button>
             </div>
           </div>
         </form>
@@ -365,6 +365,19 @@
 
 <script src="js/vanilla-tilt.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+  function submitForm() {
+      // Get form values
+      const name = document.querySelector('[name="name"]').value;
+      const email = document.querySelector('[name="email"]').value;
+      const subject = document.querySelector('[name="subject"]').value;
+      const message = document.querySelector('[name="message"]').value;
+
+      // Display form data (replace with your handling logic)
+      alert(`Form submitted!\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+  }
+</script>
 </body>
 
 </html>
