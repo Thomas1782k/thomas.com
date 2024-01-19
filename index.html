@@ -299,6 +299,7 @@
       <div class="row">
       <div class="contact-form">
         <form >
+          <input type="hidden" name="recipient_email" value="thomas1782000t@gmail.com">
           <div class="row">
             <div class="input-group">
               <input type="text" placeholder="Name" class="input-control" required>
@@ -369,6 +370,7 @@
 <script>
   function submitForm() {
       // Get form values
+      const recipientEmail = document.querySelector('[name="recipient_email"]').value;
       const name = document.querySelector('[name="name"]').value;
       const email = document.querySelector('[name="email"]').value;
       const subject = document.querySelector('[name="subject"]').value;
